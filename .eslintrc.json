@@ -20,6 +20,7 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "no-plusplus": [0],
     "react/function-component-definition": [
       2,
       {

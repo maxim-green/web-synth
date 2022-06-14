@@ -1,0 +1,52 @@
+$key-height: 130px;
+$key-width: 30px;
+$sharp-key-height: 80px;
+$sharp-key-width: 20px;
+$offset: calc(-1 * #{$sharp-key-width} / 2);
+
+.wrapper {
+  display: inline-flex;
+  padding: 20px 5px;
+}
+
+.key {
+  position: relative;
+  background-color: white;
+  font-size: 8px;
+  width: $key-width;
+  border: 1px solid black;
+  height: $key-height;
+  z-index: 1;
+  & + & {
+    border-left: none;
+  }
+
+  .keyCaption {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -14px;
+  }
+
+  &.sharp {
+    position: relative;
+    border: 1px solid black;
+    background-color: black;
+    margin-left: $offset;
+    height: $sharp-key-height;
+    width: $sharp-key-width;
+    z-index: 2;
+    .keyCaption {
+      bottom: auto;
+      top: -14px;
+    }
+  }
+
+  &.afterSharp {
+    margin-left: $offset;
+  }
+
+  &:active, &.isPressed {
+    background-color: dodgerblue;
+  }
+}

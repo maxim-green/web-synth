@@ -1,0 +1,26 @@
+$keyboard-area-height: 200px;
+$settings-area-height: calc(100vh - #{$keyboard-area-height});
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.settingsArea, .keyboardArea {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settingsArea {
+  top: 0;
+  height: $settings-area-height;
+}
+
+.keyboardArea {
+  bottom: 0;
+  height: $keyboard-area-height;
+}

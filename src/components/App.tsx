@@ -1,5 +1,5 @@
 import React from 'react';
-import Component from 'components/Component/Component';
+import Synth from 'components/Synth/Synth';
 
 interface IApp {
   x?: number
@@ -7,8 +7,7 @@ interface IApp {
 
 const App: React.FC<IApp> = () => (
   <div className="app">
-    Sample app.
-    <Component />
+    <Synth />
   </div>
 );
 
