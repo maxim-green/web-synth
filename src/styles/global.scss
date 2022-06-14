@@ -1,0 +1,11 @@
+@import '~normalize.css';
+@import 'fonts.scss';
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+}
+
+.app {
+  background-color: red;
+}
