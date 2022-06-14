@@ -1,4 +1,5 @@
 import React from 'react';
+import Component from 'components/Component/Component';
 
 interface IApp {
   x?: number
@@ -6,13 +7,8 @@ interface IApp {
 
 const App: React.FC<IApp> = () => (
   <div className="app">
-    Hello world!
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
-    <button type="button">Ok</button>
+    Sample app.
+    <Component />
   </div>
 );
 
